@@ -1,5 +1,3 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
--- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -26,29 +24,29 @@ return require('packer').startup(function(use)
       branch = 'v1.x',
       requires = {
           -- LSP Support
-          {'neovim/nvim-lspconfig'},             -- Required
-          {'williamboman/mason.nvim'},           -- Optional
-          {'williamboman/mason-lspconfig.nvim'}, -- Optional
+          {'neovim/nvim-lspconfig'},
+          {'williamboman/mason.nvim'},
+          {'williamboman/mason-lspconfig.nvim'},
 
           -- Autocompletion
-          {'hrsh7th/nvim-cmp'},         -- Required
-          {'hrsh7th/cmp-nvim-lsp'},     -- Required
-          {'hrsh7th/cmp-buffer'},       -- Optional
-          {'hrsh7th/cmp-path'},         -- Optional
-          {'saadparwaiz1/cmp_luasnip'}, -- Optional
-          {'hrsh7th/cmp-nvim-lua'},     -- Optional
+          {'hrsh7th/nvim-cmp'},
+          {'hrsh7th/cmp-nvim-lsp'},
+          {'hrsh7th/cmp-buffer'},
+          {'hrsh7th/cmp-path'},
+          {'saadparwaiz1/cmp_luasnip'},
+          {'hrsh7th/cmp-nvim-lua'},
 
           -- Snippets
-          {'L3MON4D3/LuaSnip'},             -- Required
-          {'rafamadriz/friendly-snippets'}, -- optional
+          {'L3MON4D3/LuaSnip'},
+          {'rafamadriz/friendly-snippets'},
       }
   }
   use {
       'nvim-tree/nvim-tree.lua',
       requires = {
-          'nvim-tree/nvim-web-devicons', -- optional, for file icons
+          'nvim-tree/nvim-web-devicons',
       },
-      tag = 'nightly' -- optional, updated every week. (see issue #1193)
+      tag = 'nightly'
   }
   use {'jdhao/better-escape.vim', event = 'InsertEnter'}
   use {
