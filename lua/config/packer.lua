@@ -10,7 +10,6 @@ return require('packer').startup(function(use)
     }
   use {
 	  'shaunsingh/nord.nvim',
-	  vim.cmd[[colorscheme nord]]
     }
   use {
 	  'nvim-treesitter/nvim-treesitter',
