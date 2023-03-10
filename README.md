@@ -13,3 +13,5 @@ My Neovim Configuration (WIP)
 ## Other steps
 - Use [mason.nvim](https://github.com/williamboman/mason.nvim)  to install  LSP servers, DAP servers, linters, and formatters using the command `:Mason`.
 - For icons to appear correctly install a [Nerd Font](https://www.nerdfonts.com/font-downloads) like SauceCodePro.
+- If there are errors during Step 5 then you can try running the command again or open `nvim` and do another `PackerSync`.
+- if you get an error similar to `error trying to exec 'cc1plus': execvp: No such file or directory` then install the `gcc-c++` package using your package manager.
